@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="title">
+          <h1>
+            Generate a <br />
+            random password
+          </h1>
+        </div>
+        <div class="subtitle">
+          <h2>Never use an insecure password again.</h2>
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider-container">
+            <input
+              type="range"
+              min="8"
+              max="14"
+              value="1"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <p>Number of characters: <span id="slider_num"></span></p>
+        </div>
+        <div class="generateBtn">
+          <button id="generate" onclick="generatePassword()">Generate passwords</button>
+        </div>
+        <hr />
+        <div class="gen-pw-container">
+          <div class="pass1">
+            <div class="generatedPasswords" id="pass1">
+              <p>password preview</p>
+            </div>
+            <button class="copy-btn">copy</button>
+          </div>
+          <div class="pass2">
+            <div class="generatedPasswords" id="pass2">
+              <p>password preview</p>
+            </div>
+            <button class="copy-btn">copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+		<script src="./scripts.js"></script>
+  </body>
+</html>
