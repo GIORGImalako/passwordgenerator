@@ -131,6 +131,4 @@ const characters = [
 
       document.execCommand("copy")
 
-      document.body.removeChild(tempInput)
-
-  }
+      document.body.removeChild(tempInput) }
