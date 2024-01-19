@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -28,8 +32,9 @@
               id="myRange"
             />
           </div>
-          <p>Number of characters: <span id="slider_num"></span></p>
+          <p class="forcolor">Number of characters: <span id="slider_num"></span></p>
         </div>
+        <div class="box">
         <div class="generateBtn">
           <button id="generate" onclick="generatePassword()">Generate passwords</button>
         </div>
@@ -37,15 +42,18 @@
         <div class="gen-pw-container">
           <div class="pass1">
             <div class="generatedPasswords" id="pass1">
-              <p>password preview</p>
+              <p class="thecolor">password preview</p>
             </div>
+            <button class="copy-btn">copy</button>
             <button class="copy-btn" onclick="copyToClipboard(document.getElementById('pass1'))">copy</button>
           </div>
           <div class="pass2">
             <div class="generatedPasswords" id="pass2">
               <p>password preview</p>
             </div>
+            <button class="copy-btn">copy</button>
             <button class="copy-btn" onclick="copyToClipboard(document.getElementById('pass2'))">copy</button>
+          </div>
           </div>
         </div>
       </div>

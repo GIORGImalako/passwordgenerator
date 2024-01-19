@@ -91,47 +91,46 @@ const characters = [
     "?",
     "/",
   ];
-  
+
   let pass1 = document.getElementById("pass1");
   let pass2 = document.getElementById("pass2");
-  
+
   let slider = document.getElementById("myRange")
-  
+
   function generatePassword() {
       let password1 = ""
       let password2 = ""
-  
+
       for(let i = 0; i < slider.value; i++) {
           password1 += characters[Math.floor(Math.random() * characters.length)]
           password2 += characters[Math.floor(Math.random() * characters.length)]
       }
-  
+
       pass1.textContent = password1
       pass2.textContent = password2
   }
-  
+
   // generatePassword()
-  
+
   let output = document.getElementById("slider_num")
   output.innerHTML = slider.value
-  
+
   slider.oninput = function() {
       output.innerHTML = this.value
   }
-  
+
   function copyToClipboard(element) {
       // შევქმნათ ახალი ინპუტ ელემენტი
       let tempInput = document.createElement("input");
-  
+
       tempInput.value = element.innerHTML
-  
+
       document.body.appendChild(tempInput)
-  
+
       tempInput.select()
-  
+
       document.execCommand("copy")
-  
+
       document.body.removeChild(tempInput)
-  
+
   }
-  
